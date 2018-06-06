@@ -8,28 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF35C20C7E32100B225DC /* AppDelegate.swift */; };
-		BC4EF35F20C7E32100B225DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF35E20C7E32100B225DC /* ViewController.swift */; };
 		BC4EF36420C7E32200B225DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF36320C7E32200B225DC /* Assets.xcassets */; };
 		BC4EF36720C7E32200B225DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF36520C7E32200B225DC /* LaunchScreen.storyboard */; };
 		BC4EF37120C7E79A00B225DC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF36F20C7E79A00B225DC /* Operators.swift */; };
 		BC4EF37220C7E79A00B225DC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37020C7E79A00B225DC /* Alert.swift */; };
 		BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37420C7E7B500B225DC /* StoryboardInstantiable.swift */; };
-		BC4EF37A20C7E9CB00B225DC /* SpaceFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37920C7E9CB00B225DC /* SpaceFlightsViewController.swift */; };
-		BC4EF37C20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37B20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard */; };
+		BC4EF37A20C7E9CB00B225DC /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37920C7E9CB00B225DC /* FlightsViewController.swift */; };
+		BC4EF37C20C7EA0C00B225DC /* FlightsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37B20C7EA0C00B225DC /* FlightsViewController.storyboard */; };
+		BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */; };
+		BC4EF38020C7ED4600B225DC /* FlightDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */; };
+		BC4EF38320C7F0F200B225DC /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */; };
+		BC4EF38520C7F19A00B225DC /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */; };
+		BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */; };
+		BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */; };
+		BC4EF38C20C7F8B600B225DC /* FlighTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC4EF35920C7E32100B225DC /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4EF35C20C7E32100B225DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC4EF35E20C7E32100B225DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC4EF36320C7E32200B225DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4EF36620C7E32200B225DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4EF36820C7E32200B225DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4EF36F20C7E79A00B225DC /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		BC4EF37020C7E79A00B225DC /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BC4EF37420C7E7B500B225DC /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
-		BC4EF37920C7E9CB00B225DC /* SpaceFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceFlightsViewController.swift; sourceTree = "<group>"; };
-		BC4EF37B20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpaceFlightsViewController.storyboard; sourceTree = "<group>"; };
+		BC4EF37920C7E9CB00B225DC /* FlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
+		BC4EF37B20C7EA0C00B225DC /* FlightsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightsViewController.storyboard; sourceTree = "<group>"; };
+		BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
+		BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightDetailsViewController.storyboard; sourceTree = "<group>"; };
+		BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceFunctions.swift; sourceTree = "<group>"; };
+		BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighTableViewCell.swift; sourceTree = "<group>"; };
+		BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlighTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +76,9 @@
 			children = (
 				BC4EF35C20C7E32100B225DC /* AppDelegate.swift */,
 				BC4EF36E20C7E78800B225DC /* Utilities */,
+				BC4EF38120C7F0B100B225DC /* Extensions */,
 				BC4EF37320C7E7A700B225DC /* Protocols */,
 				BC4EF37620C7E7F500B225DC /* Modules */,
-				BC4EF35E20C7E32100B225DC /* ViewController.swift */,
 				BC4EF36320C7E32200B225DC /* Assets.xcassets */,
 				BC4EF36520C7E32200B225DC /* LaunchScreen.storyboard */,
 				BC4EF36820C7E32200B225DC /* Info.plist */,
@@ -79,6 +91,7 @@
 			children = (
 				BC4EF37020C7E79A00B225DC /* Alert.swift */,
 				BC4EF36F20C7E79A00B225DC /* Operators.swift */,
+				BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -103,8 +116,9 @@
 		BC4EF37720C7E9A100B225DC /* SpaceFlights */ = {
 			isa = PBXGroup;
 			children = (
-				BC4EF37920C7E9CB00B225DC /* SpaceFlightsViewController.swift */,
-				BC4EF37B20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard */,
+				BC4EF38820C7F89400B225DC /* Cells */,
+				BC4EF37920C7E9CB00B225DC /* FlightsViewController.swift */,
+				BC4EF37B20C7EA0C00B225DC /* FlightsViewController.storyboard */,
 			);
 			path = SpaceFlights;
 			sourceTree = "<group>";
@@ -112,8 +126,28 @@
 		BC4EF37820C7E9B500B225DC /* FlightDetails */ = {
 			isa = PBXGroup;
 			children = (
+				BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */,
+				BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */,
 			);
 			path = FlightDetails;
+			sourceTree = "<group>";
+		};
+		BC4EF38120C7F0B100B225DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */,
+				BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC4EF38820C7F89400B225DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */,
+				BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4EF37C20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard in Resources */,
+				BC4EF38020C7ED4600B225DC /* FlightDetailsViewController.storyboard in Resources */,
+				BC4EF37C20C7EA0C00B225DC /* FlightsViewController.storyboard in Resources */,
 				BC4EF36720C7E32200B225DC /* LaunchScreen.storyboard in Resources */,
+				BC4EF38C20C7F8B600B225DC /* FlighTableViewCell.xib in Resources */,
 				BC4EF36420C7E32200B225DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,11 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4EF35F20C7E32100B225DC /* ViewController.swift in Sources */,
+				BC4EF38520C7F19A00B225DC /* UIColorExtensions.swift in Sources */,
+				BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */,
 				BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */,
+				BC4EF38320C7F0F200B225DC /* UINavigationControllerExtensions.swift in Sources */,
 				BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */,
 				BC4EF37220C7E79A00B225DC /* Alert.swift in Sources */,
-				BC4EF37A20C7E9CB00B225DC /* SpaceFlightsViewController.swift in Sources */,
+				BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */,
+				BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */,
+				BC4EF37A20C7E9CB00B225DC /* FlightsViewController.swift in Sources */,
 				BC4EF37120C7E79A00B225DC /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

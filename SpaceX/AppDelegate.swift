@@ -13,7 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navigationController = UINavigationController(rootViewController: SpaceFlightsViewController.instantiate())
+        window?.backgroundColor = UIColor.appGray
+        let navigationController = UINavigationController(rootViewController: FlightsViewController.instantiate())
+        navigationController.setDarkAppearance()
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

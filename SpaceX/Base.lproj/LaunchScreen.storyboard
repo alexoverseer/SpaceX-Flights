@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceX_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="m8Y-oU-N2a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceX_logo" translatesAutoresizingMaskIntoConstraints="NO" id="m8Y-oU-N2a">
                                 <rect key="frame" x="37.666666666666657" y="356" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="HcW-eo-Rlk"/>
@@ -26,7 +26,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.015686274509803921" green="0.2196078431372549" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.12941176470588234" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="m8Y-oU-N2a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Jm7-7Q-DBZ"/>
                             <constraint firstItem="m8Y-oU-N2a" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fvu-6Q-LCH"/>
@@ -40,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SpaceX_Logo" width="666" height="253"/>
+        <image name="SpaceX_logo" width="1000" height="272"/>
     </resources>
 </document>

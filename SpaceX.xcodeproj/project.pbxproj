@@ -16,6 +16,8 @@
 		BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37420C7E7B500B225DC /* StoryboardInstantiable.swift */; };
 		BC4EF37A20C7E9CB00B225DC /* SpaceFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37920C7E9CB00B225DC /* SpaceFlightsViewController.swift */; };
 		BC4EF37C20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37B20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard */; };
+		BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */; };
+		BC4EF38020C7ED4600B225DC /* FlightDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BC4EF37420C7E7B500B225DC /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		BC4EF37920C7E9CB00B225DC /* SpaceFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceFlightsViewController.swift; sourceTree = "<group>"; };
 		BC4EF37B20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpaceFlightsViewController.storyboard; sourceTree = "<group>"; };
+		BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
+		BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightDetailsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		BC4EF37820C7E9B500B225DC /* FlightDetails */ = {
 			isa = PBXGroup;
 			children = (
+				BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */,
+				BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */,
 			);
 			path = FlightDetails;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4EF38020C7ED4600B225DC /* FlightDetailsViewController.storyboard in Resources */,
 				BC4EF37C20C7EA0C00B225DC /* SpaceFlightsViewController.storyboard in Resources */,
 				BC4EF36720C7E32200B225DC /* LaunchScreen.storyboard in Resources */,
 				BC4EF36420C7E32200B225DC /* Assets.xcassets in Resources */,
@@ -187,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */,
 				BC4EF35F20C7E32100B225DC /* ViewController.swift in Sources */,
 				BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */,
 				BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */,

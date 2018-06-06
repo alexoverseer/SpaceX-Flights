@@ -42,5 +42,9 @@ extension FlightsViewController: UITableViewDataSource {
 
 extension FlightsViewController: UITableViewDelegate {
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let flightDetailsController = FlightDetailsViewController.instantiate()
+        navigationController?.pushViewController(flightDetailsController, animated: true)
+    }
 }

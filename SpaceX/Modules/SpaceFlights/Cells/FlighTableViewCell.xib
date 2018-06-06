@@ -61,7 +61,7 @@
                     <constraint firstAttribute="bottom" secondItem="irZ-nO-HOp" secondAttribute="bottom" constant="10" id="vYa-Zk-Jh6"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.10588235294117647" green="0.10980392156862745" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.10588235294117647" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="57" y="65.5"/>
         </tableViewCell>

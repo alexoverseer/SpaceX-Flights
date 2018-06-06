@@ -7,6 +7,6 @@ class FlightDetailsViewController: UIViewController, StoryboardInstantiable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        title = "SpaceX"
     }
 }

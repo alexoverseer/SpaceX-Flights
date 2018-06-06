@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF35C20C7E32100B225DC /* AppDelegate.swift */; };
-		BC4EF35F20C7E32100B225DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF35E20C7E32100B225DC /* ViewController.swift */; };
 		BC4EF36420C7E32200B225DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF36320C7E32200B225DC /* Assets.xcassets */; };
 		BC4EF36720C7E32200B225DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF36520C7E32200B225DC /* LaunchScreen.storyboard */; };
 		BC4EF37120C7E79A00B225DC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF36F20C7E79A00B225DC /* Operators.swift */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		BC4EF35920C7E32100B225DC /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4EF35C20C7E32100B225DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC4EF35E20C7E32100B225DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC4EF36320C7E32200B225DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4EF36620C7E32200B225DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4EF36820C7E32200B225DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				BC4EF38120C7F0B100B225DC /* Extensions */,
 				BC4EF37320C7E7A700B225DC /* Protocols */,
 				BC4EF37620C7E7F500B225DC /* Modules */,
-				BC4EF35E20C7E32100B225DC /* ViewController.swift */,
 				BC4EF36320C7E32200B225DC /* Assets.xcassets */,
 				BC4EF36520C7E32200B225DC /* LaunchScreen.storyboard */,
 				BC4EF36820C7E32200B225DC /* Info.plist */,
@@ -228,7 +225,6 @@
 			files = (
 				BC4EF38520C7F19A00B225DC /* UIColorExtensions.swift in Sources */,
 				BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */,
-				BC4EF35F20C7E32100B225DC /* ViewController.swift in Sources */,
 				BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */,
 				BC4EF38320C7F0F200B225DC /* UINavigationControllerExtensions.swift in Sources */,
 				BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */,

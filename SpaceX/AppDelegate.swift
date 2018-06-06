@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.appGray
         let navigationController = UINavigationController(rootViewController: FlightsViewController.instantiate())
         navigationController.setDarkAppearance()
         window?.rootViewController = navigationController

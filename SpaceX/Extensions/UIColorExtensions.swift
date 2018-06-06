@@ -10,11 +10,7 @@ extension UIColor {
         self.init(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
     }
     
-    static var appBlue: UIColor {
-        return UIColor(r: 3, g: 36, b: 63)
-    }
-
     static var appGray: UIColor {
-        return UIColor(r: 34, g: 33, b: 41)
+        return UIColor(r: 29, g: 30, b: 34)
     }
 }

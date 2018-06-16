@@ -22,9 +22,11 @@
 		BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */; };
 		BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */; };
 		BC4EF38C20C7F8B600B225DC /* FlighTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */; };
+		ED20B24534DCC3202C425D06 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1799BDD93691296086844C17 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		BC4EF35920C7E32100B225DC /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4EF35C20C7E32100B225DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC4EF36320C7E32200B225DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceFunctions.swift; sourceTree = "<group>"; };
 		BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighTableViewCell.swift; sourceTree = "<group>"; };
 		BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlighTableViewCell.xib; sourceTree = "<group>"; };
+		CD547FDEC908FFA79CA5A791 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED20B24534DCC3202C425D06 /* Pods_SpaceX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		513EBFBAD81FB621C4E9FF99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC4EF35020C7E32100B225DC = {
 			isa = PBXGroup;
 			children = (
 				BC4EF35B20C7E32100B225DC /* SpaceX */,
 				BC4EF35A20C7E32100B225DC /* Products */,
+				C25836E872757318B7B34EA2 /* Pods */,
+				513EBFBAD81FB621C4E9FF99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +165,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		C25836E872757318B7B34EA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1799BDD93691296086844C17 /* Pods-SpaceX.debug.xcconfig */,
+				CD547FDEC908FFA79CA5A791 /* Pods-SpaceX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC4EF36B20C7E32200B225DC /* Build configuration list for PBXNativeTarget "SpaceX" */;
 			buildPhases = (
+				F06EDF18BD2CE46065F1EE2A /* [CP] Check Pods Manifest.lock */,
 				BC4EF35520C7E32100B225DC /* Sources */,
 				BC4EF35620C7E32100B225DC /* Frameworks */,
 				BC4EF35720C7E32100B225DC /* Resources */,
+				89EA6BDF7565AA44843F9A24 /* [CP] Embed Pods Frameworks */,
+				01BB6BCBBB5E77312BE85B88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +244,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01BB6BCBBB5E77312BE85B88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89EA6BDF7565AA44843F9A24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06EDF18BD2CE46065F1EE2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC4EF35520C7E32100B225DC /* Sources */ = {
@@ -366,15 +447,13 @@
 		};
 		BC4EF36C20C7E32200B225DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1799BDD93691296086844C17 /* Pods-SpaceX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -384,15 +463,13 @@
 		};
 		BC4EF36D20C7E32200B225DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD547FDEC908FFA79CA5A791 /* Pods-SpaceX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

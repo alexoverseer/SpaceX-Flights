@@ -33,6 +33,7 @@
 		BC868A6E20D7A08F00D9EBB2 /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */; };
 		BC868A7020D7A0A000D9EBB2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6F20D7A0A000D9EBB2 /* Links.swift */; };
 		BC868A7220D7DC5600D9EBB2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7120D7DC5600D9EBB2 /* StringExtensions.swift */; };
+		BC868A7420D7EF1700D9EBB2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */; };
 		ED20B24534DCC3202C425D06 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
 		BC868A6F20D7A0A000D9EBB2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		BC868A7120D7DC5600D9EBB2 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CD547FDEC908FFA79CA5A791 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */,
 				BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */,
 				BC868A7120D7DC5600D9EBB2 /* StringExtensions.swift */,
+				BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -302,10 +305,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,6 +356,7 @@
 				BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */,
 				BC4EF37220C7E79A00B225DC /* Alert.swift in Sources */,
 				BC868A6C20D7A07E00D9EBB2 /* Reuse.swift in Sources */,
+				BC868A7420D7EF1700D9EBB2 /* UIViewControllerExtensions.swift in Sources */,
 				BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */,
 				BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */,
 				BC4EF37A20C7E9CB00B225DC /* FlightsViewController.swift in Sources */,
@@ -497,10 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -516,10 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

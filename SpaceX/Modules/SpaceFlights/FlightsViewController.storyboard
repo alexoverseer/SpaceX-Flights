@@ -29,19 +29,25 @@
                                     <outlet property="delegate" destination="c8a-yu-hKr" id="gUI-6x-bnW"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="lr0-G4-eDG">
+                                <rect key="frame" x="177" y="401" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.12941176470588234" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JHN-Gg-hfH" firstAttribute="top" secondItem="aIG-un-BFZ" secondAttribute="top" id="3Id-2e-8d0"/>
                             <constraint firstItem="aIG-un-BFZ" firstAttribute="bottom" secondItem="JHN-Gg-hfH" secondAttribute="bottom" id="6Ru-wT-OFT"/>
+                            <constraint firstItem="lr0-G4-eDG" firstAttribute="centerY" secondItem="JHN-Gg-hfH" secondAttribute="centerY" id="6iE-Qi-5eG"/>
                             <constraint firstItem="aIG-un-BFZ" firstAttribute="trailing" secondItem="JHN-Gg-hfH" secondAttribute="trailing" id="Fj5-Jg-eep"/>
                             <constraint firstItem="JHN-Gg-hfH" firstAttribute="leading" secondItem="aIG-un-BFZ" secondAttribute="leading" id="LuC-vY-k9a"/>
+                            <constraint firstItem="lr0-G4-eDG" firstAttribute="centerX" secondItem="JHN-Gg-hfH" secondAttribute="centerX" id="MsF-gr-RhC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aIG-un-BFZ"/>
                     </view>
                     <connections>
                         <outlet property="flightsTableView" destination="JHN-Gg-hfH" id="YT0-fc-BmB"/>
+                        <outlet property="loadingIndicator" destination="lr0-G4-eDG" id="gHo-zP-Bs5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2K-Kb-qVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

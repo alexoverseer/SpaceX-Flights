@@ -1,4 +1,6 @@
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class FlighTableViewCell: UITableViewCell {
 
@@ -11,6 +13,19 @@ class FlighTableViewCell: UITableViewCell {
     func setupCell(flight: Flight) {
         missionNameLabel.text = flight.missionName
         launchDateLabel.text = formatFlightDate(flightDate: flight.launchDateUnix).uppercased()
-        print(flight.links.videoLink.capturedGroups(withRegex: "[?&;]v=([^?&;]+)"))
+        loadThumbnailImage(imageURL: flight.links.videoLink.youtubePreviewImageURL())
+    }
+    
+    private func loadThumbnailImage(imageURL: String) {
+        
+        Alamofire.request(imageURL).responseImage { [weak self] response in
+            
+            if let image = response.result.value {
+                self?.flightImage.image = image
+                UIView.animate(withDuration: 0.2, animations: {
+                    self?.flightImage.alpha = 1
+                })
+            }
+        }
     }
 }

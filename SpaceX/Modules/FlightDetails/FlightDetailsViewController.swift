@@ -12,7 +12,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     @IBOutlet weak var launchDetailsLabel: UILabel!
     @IBOutlet weak var rocketNameLabel: UILabel!
     @IBOutlet weak var payloadMassLabel: UILabel!
-    @IBOutlet weak var videoLoadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var ytPlayerView: YTPlayerView!
     
     private var flight: Flight?
@@ -23,7 +23,6 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
         title = flight?.missionName
         setMainInfo()
         loadFlightImage()
-        loadVideo()
     }
     
     func setupFlight(_ flight: Flight?) {
@@ -40,6 +39,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     private func loadVideo() {
         
         guard let ytVideoID = flight?.links.videoLink.getYTVideoID() else { return }
+        ytPlayerView.delegate = self
         ytPlayerView.load(withVideoId: ytVideoID)
     }
     
@@ -50,7 +50,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
         Alamofire.request(url).responseImage { [weak self] response in
             
             if let image = response.result.value {
-                self?.videoLoadingIndicator.stopAnimating()
+                self?.loadingIndicator.stopAnimating()
                 self?.flightImage.image = image
                 UIView.animate(withDuration: 0.2, animations: {
                     self?.flightImage.alpha = 1
@@ -64,7 +64,20 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     }
     
     @IBAction func flightImageTap(_ sender: UITapGestureRecognizer) {
+        loadVideo()
+        self.loadingIndicator.startAnimating()
+    }
+}
+
+extension FlightDetailsViewController: YTPlayerViewDelegate {
+    
+    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+        self.loadingIndicator.stopAnimating()
         flightImage.isHidden = true
         ytPlayerView.playVideo()
+    }
+    
+    func playerView(_ playerView: YTPlayerView, receivedError error: YTPlayerError) {
+        self.loadingIndicator.stopAnimating()
     }
 }

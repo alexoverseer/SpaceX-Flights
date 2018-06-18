@@ -30,7 +30,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     }
     
     private func setMainInfo() {
-        launchDateLabel?.text = formatFlightDate(flightDate: flight?.launchDateUnix ?? 0).uppercased()
+        launchDateLabel?.text = formatedFlightDate(flightDate: flight?.launchDateUnix ?? 0).uppercased()
         launchDetailsLabel?.text = flight?.details
         rocketNameLabel?.text = "Rocket name: \(flight?.rocket.rocketName ?? "")"
         payloadMassLabel?.text = "Payload mass: \(flight?.rocket.secondStage.payloads.first?.payloadMassKg ?? 0) Kg"

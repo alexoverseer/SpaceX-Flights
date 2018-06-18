@@ -12,7 +12,7 @@ class FlighTableViewCell: UITableViewCell {
     
     func setupCell(flight: Flight) {
         missionNameLabel.text = flight.missionName
-        launchDateLabel.text = formatFlightDate(flightDate: flight.launchDateUnix).uppercased()
+        launchDateLabel.text = formatedFlightDate(flightDate: flight.launchDateUnix).uppercased()
         loadThumbnailImage(imageURL: flight.links.videoLink.youtubePreviewImageURL())
     }
     

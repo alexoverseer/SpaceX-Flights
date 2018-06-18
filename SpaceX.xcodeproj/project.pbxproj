@@ -238,6 +238,7 @@
 				BC4EF35620C7E32100B225DC /* Frameworks */,
 				BC4EF35720C7E32100B225DC /* Resources */,
 				89EA6BDF7565AA44843F9A24 /* [CP] Embed Pods Frameworks */,
+				B41830CBC9ECE58CFA7EC6F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +318,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41830CBC9ECE58CFA7EC6F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F06EDF18BD2CE46065F1EE2A /* [CP] Check Pods Manifest.lock */ = {
@@ -505,7 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -521,7 +540,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -4,7 +4,7 @@ var isReachable: Bool {
     return (NetworkReachabilityManager()?.isReachable) ?? false
 }
 
-func formatFlightDate(flightDate: Double) -> String {
+func formatedFlightDate(flightDate: Double) -> String {
     
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE dd, yyyy"

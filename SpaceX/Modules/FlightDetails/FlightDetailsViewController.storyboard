@@ -27,21 +27,38 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-lQ-j9e">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="534.66666666666663"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TnG-et-Exe">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TnG-et-Exe">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceX_logo" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-0e-g8u">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGo-86-Cb9" customClass="YTPlayerView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                    <imageView clipsSubviews="YES" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-0e-g8u">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                                         <color key="backgroundColor" red="0.13678485160000001" green="0.28028559679999998" blue="0.3725369275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="hbi-kk-jvo" appends="YES" id="Nyo-i2-Qys"/>
+                                                        </connections>
                                                     </imageView>
+                                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="AJ4-94-CTd">
+                                                        <rect key="frame" x="177" y="140" width="20" height="20"/>
+                                                    </activityIndicatorView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="NGo-86-Cb9" firstAttribute="leading" secondItem="TnG-et-Exe" secondAttribute="leading" id="4iv-3T-eOC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NGo-86-Cb9" secondAttribute="trailing" id="5fu-TV-JBO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NGo-86-Cb9" secondAttribute="bottom" id="6Tu-rn-khK"/>
                                                     <constraint firstItem="mjc-0e-g8u" firstAttribute="leading" secondItem="TnG-et-Exe" secondAttribute="leading" id="6XO-vo-dwI"/>
+                                                    <constraint firstItem="AJ4-94-CTd" firstAttribute="centerY" secondItem="mjc-0e-g8u" secondAttribute="centerY" id="FGQ-YB-IlC"/>
                                                     <constraint firstAttribute="trailing" secondItem="mjc-0e-g8u" secondAttribute="trailing" id="GFI-WP-hxZ"/>
                                                     <constraint firstAttribute="height" constant="300" id="Gem-Jv-tbh">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="600"/>
                                                     </constraint>
+                                                    <constraint firstItem="AJ4-94-CTd" firstAttribute="centerX" secondItem="mjc-0e-g8u" secondAttribute="centerX" id="Vhc-4Y-Rar"/>
+                                                    <constraint firstItem="NGo-86-Cb9" firstAttribute="top" secondItem="TnG-et-Exe" secondAttribute="top" id="lMw-Nv-GNf"/>
                                                     <constraint firstAttribute="bottom" secondItem="mjc-0e-g8u" secondAttribute="bottom" id="qBC-MP-ZHh"/>
                                                     <constraint firstItem="mjc-0e-g8u" firstAttribute="top" secondItem="TnG-et-Exe" secondAttribute="top" id="rVy-Mu-BWi"/>
                                                 </constraints>
@@ -78,6 +95,9 @@
                                                 </constraints>
                                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="wikipedia"/>
+                                                <connections>
+                                                    <action selector="swhowFlightDetailsOnWikipedia" destination="w6T-wu-b2Y" eventType="touchUpInside" id="76g-HP-KAj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,13 +139,24 @@
                             <constraint firstItem="gCS-eo-mY9" firstAttribute="leading" secondItem="yNZ-Mk-LL9" secondAttribute="leading" id="fux-WI-oFh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flightImage" destination="mjc-0e-g8u" id="9iY-wm-3ta"/>
+                        <outlet property="launchDateLabel" destination="oMg-lf-lFz" id="7G7-Nx-Eev"/>
+                        <outlet property="launchDetailsLabel" destination="hF9-PP-7de" id="MHw-xO-gyV"/>
+                        <outlet property="loadingIndicator" destination="AJ4-94-CTd" id="eGW-lb-jLt"/>
+                        <outlet property="payloadMassLabel" destination="SYw-nw-rcY" id="sLu-Lt-Rhb"/>
+                        <outlet property="rocketNameLabel" destination="N2m-GO-5AQ" id="jvx-EZ-VWY"/>
+                        <outlet property="ytPlayerView" destination="NGo-86-Cb9" id="N2J-IT-zds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbf-2N-Isb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hbi-kk-jvo">
+                    <connections>
+                        <action selector="flightImageTap:" destination="w6T-wu-b2Y" id="zut-0T-11n"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-39.200000000000003" y="-5.9113300492610836"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="SpaceX_logo" width="1000" height="272"/>
-    </resources>
 </document>

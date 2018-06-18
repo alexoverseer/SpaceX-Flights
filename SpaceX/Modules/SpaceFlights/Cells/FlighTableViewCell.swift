@@ -4,14 +4,13 @@ class FlighTableViewCell: UITableViewCell {
 
     static let identifier = "FlighTableViewCell"
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        
+    @IBOutlet weak var missionNameLabel: UILabel!
+    @IBOutlet weak var launchDateLabel: UILabel!
+    @IBOutlet weak var flightImage: UIImageView!
+    
+    func setupCell(flight: Flight) {
+        missionNameLabel.text = flight.missionName
+        launchDateLabel.text = formatFlightDate(flightDate: flight.launchDateUnix).uppercased()
+        print(flight.links.videoLink.capturedGroups(withRegex: "[?&;]v=([^?&;]+)"))
     }
 }

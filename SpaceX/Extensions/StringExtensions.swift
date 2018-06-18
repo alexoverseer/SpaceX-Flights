@@ -2,19 +2,26 @@ import Foundation
 
 extension String {
     
-    func capturedGroups(withRegex pattern: String) -> String {
+    func youtubePreviewImageURL() -> String {
+        
+        let videoID = getYTVideoID()
+        return "https://i1.ytimg.com/vi/\(videoID)/0.jpg"
+    }
+    
+    public func getYTVideoID() -> String {
+        
         var results = [String]()
         
         var regex: NSRegularExpression
         
         do {
-            regex = try NSRegularExpression(pattern: pattern, options: [])
+            regex = try NSRegularExpression(pattern: "[?&;]v=([^?&;]+)", options: [])
         } catch {
             return results.first ?? ""
         }
         
         let matches = regex.matches(in: self, options: [], range: NSRange(location:0, length: self.count))
-
+        
         guard let match = matches.first else { return results.first ?? ""}
         
         let lastRangeIndex = match.numberOfRanges - 1

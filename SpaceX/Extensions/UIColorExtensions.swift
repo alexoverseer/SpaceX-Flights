@@ -11,6 +11,6 @@ extension UIColor {
     }
     
     static var appGray: UIColor {
-        return UIColor(r: 29, g: 30, b: 34)
+        return UIColor(r: 30, g: 29, b: 37)
     }
 }

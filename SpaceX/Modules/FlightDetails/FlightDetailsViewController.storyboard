@@ -143,9 +143,9 @@
                         <outlet property="flightImage" destination="mjc-0e-g8u" id="9iY-wm-3ta"/>
                         <outlet property="launchDateLabel" destination="oMg-lf-lFz" id="7G7-Nx-Eev"/>
                         <outlet property="launchDetailsLabel" destination="hF9-PP-7de" id="MHw-xO-gyV"/>
+                        <outlet property="loadingIndicator" destination="AJ4-94-CTd" id="eGW-lb-jLt"/>
                         <outlet property="payloadMassLabel" destination="SYw-nw-rcY" id="sLu-Lt-Rhb"/>
                         <outlet property="rocketNameLabel" destination="N2m-GO-5AQ" id="jvx-EZ-VWY"/>
-                        <outlet property="videoLoadingIndicator" destination="AJ4-94-CTd" id="fMH-8q-l0g"/>
                         <outlet property="ytPlayerView" destination="NGo-86-Cb9" id="N2J-IT-zds"/>
                     </connections>
                 </viewController>

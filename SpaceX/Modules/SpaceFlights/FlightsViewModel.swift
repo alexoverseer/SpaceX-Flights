@@ -6,8 +6,6 @@ final class FlightsViewModel {
     
     private var flights: [Flight] = [Flight]()
     
-    var selectedFlight: Flight?
-    
     var reloadFlightsTableView: (()->())?
     var showAlertClosure: (()->())?
     var updateLoadingStatus: (()->())?
@@ -44,6 +42,7 @@ final class FlightsViewModel {
             self?.isLoading = false
             self?.processFetchedFlights(flights: flights)
         }) { [weak self] error in
+            self?.isLoading = false
             self?.alertMessage = error.message
         }
     }
@@ -59,17 +58,15 @@ final class FlightsViewModel {
     private func processFetchedFlights(flights: [Flight]) {
         
         self.flights = flights
-        var vms = [FlighTableViewCellViewModel]()
-        for flight in flights {
-            vms.append(createCellViewModel(flight: flight))
-        }
-        self.cellViewModels = vms
+        var flighViewModels = [FlighTableViewCellViewModel]()
+        flighViewModels = flights.map {createCellViewModel(flight: $0)}
+        self.cellViewModels = flighViewModels
     }
     
     func createCellViewModel(flight: Flight) -> FlighTableViewCellViewModel {
         
         return FlighTableViewCellViewModel(missionNameText: flight.missionName,
-                                           launchDateText:  formatedFlightDate(flightDate: flight.launchDateUnix).uppercased(),
-                                           flightImageUrl:  flight.links.videoLink.youtubePreviewImageURL())
+                                            launchDateText: formatedFlightDate(flightDate: flight.launchDateUnix).uppercased(),
+                                            flightImageUrl: flight.links.videoLink.youtubePreviewImageURL())
     }
 }

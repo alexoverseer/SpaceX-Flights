@@ -1,31 +1,28 @@
 import UIKit
 import Alamofire
-import AlamofireImage
+import SDWebImage
 
 class FlighTableViewCell: UITableViewCell {
 
     static let identifier = "FlighTableViewCell"
     
-    @IBOutlet weak var missionNameLabel: UILabel!
-    @IBOutlet weak var launchDateLabel: UILabel!
-    @IBOutlet weak var flightImage: UIImageView!
+    @IBOutlet private weak var missionNameLabel: UILabel!
+    @IBOutlet private weak var launchDateLabel: UILabel!
+    @IBOutlet private weak var flightImage: UIImageView!
     
-    func setupCell(flight: Flight) {
-        missionNameLabel.text = flight.missionName
-        launchDateLabel.text = formatedFlightDate(flightDate: flight.launchDateUnix).uppercased()
-        loadThumbnailImage(imageURL: flight.links.videoLink.youtubePreviewImageURL())
+    func setupCell(viewModel: FlighTableViewCellViewModel) {
+        missionNameLabel.text = viewModel.missionNameText
+        launchDateLabel.text = viewModel.launchDateText
+        loadThumbnailImage(imageURL: viewModel.flightImageUrl)
     }
     
     private func loadThumbnailImage(imageURL: String) {
         
-        Alamofire.request(imageURL).responseImage { [weak self] response in
-            
-            if let image = response.result.value {
-                self?.flightImage.image = image
-                UIView.animate(withDuration: 0.2, animations: {
-                    self?.flightImage.alpha = 1
-                })
-            }
-        }
+        flightImage.sd_setImage(with: URL(string: imageURL)) { [weak self] (image, error, cacheType, url) in
+            self?.flightImage.image = image
+            UIView.animate(withDuration: 0.2, animations: {
+                self?.flightImage.alpha = 1
+            })
+        };
     }
 }

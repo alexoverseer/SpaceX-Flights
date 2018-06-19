@@ -1,6 +1,10 @@
 import Foundation
 
-struct SpaceFlights {
+protocol SpaceFlightsProtocol {
+    func requestFlights(onSuccess: @escaping ([Flight]) -> Void, onFailure: @escaping (ErrorType) -> Void)
+}
+
+struct SpaceFlights: SpaceFlightsProtocol {
     
     func requestFlights(onSuccess: @escaping ([Flight]) -> Void, onFailure: @escaping (ErrorType) -> Void) {
         let onRequestSuccess: (Any?) -> Void = { response in
@@ -10,7 +14,8 @@ struct SpaceFlights {
             }
             
             do {
-                let flights = try JSONDecoder().decode([Flight].self, from: jsonData)
+                var flights = try JSONDecoder().decode([Flight].self, from: jsonData)
+                flights.reverse()
                 onSuccess(flights)
             } catch let error {
                 print(error)

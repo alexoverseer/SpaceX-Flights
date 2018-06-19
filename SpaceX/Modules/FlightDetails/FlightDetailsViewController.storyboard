@@ -12,7 +12,7 @@
         <!--Flight Details View Controller-->
         <scene sceneID="PvY-Vl-fZa">
             <objects>
-                <viewController storyboardIdentifier="FlightDetailsViewController" id="w6T-wu-b2Y" customClass="FlightDetailsViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="w6T-wu-b2Y" customClass="FlightDetailsViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HyE-1V-S20"/>
                         <viewControllerLayoutGuide type="bottom" id="jNK-FF-nDk"/>

@@ -14,12 +14,12 @@ final class FlightsViewController: UIViewController, StoryboardInstantiable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setNavigationItemImage()
+        initNavigationImage()
         initView()
         initViewModel()
     }
     
-    private func setNavigationItemImage() {
+    private func initNavigationImage() {
         
         let spaceXImage = UIImageView(image: #imageLiteral(resourceName: "SpaceX_logo"))
         spaceXImage.contentMode = .scaleAspectFit
@@ -28,8 +28,7 @@ final class FlightsViewController: UIViewController, StoryboardInstantiable {
     
     private func initView() {
         flightsTableView.tableFooterView = UIView()
-        flightsTableView.register(UINib(nibName: FlighTableViewCell.identifier, bundle: nil),
-                                  forCellReuseIdentifier: FlighTableViewCell.identifier)
+        flightsTableView.register(cellType: FlighTableViewCell.self)
     }
     
     private func initViewModel() {
@@ -73,7 +72,8 @@ extension FlightsViewController: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let flightCell = tableView.dequeueReusableCell(withIdentifier: FlighTableViewCell.identifier, for: indexPath) as! FlighTableViewCell
+        
+        let flightCell: FlighTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         
         let cellViewModel = flightsViewModel.getCellViewModel(at: indexPath)
         flightCell.setupCell(viewModel: cellViewModel)

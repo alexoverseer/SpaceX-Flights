@@ -5,7 +5,8 @@ target 'SpaceX' do
   inhibit_all_warnings!
 
   pod 'Alamofire'
-  pod 'AlamofireImage'
   pod 'youtube-ios-player-helper'
+  pod 'SDWebImage'
+  pod 'Reusable'
 
 end

@@ -13,13 +13,13 @@
         <!--Flights View Controller-->
         <scene sceneID="Zlg-yb-Myj">
             <objects>
-                <viewController storyboardIdentifier="FlightsViewController" id="c8a-yu-hKr" customClass="FlightsViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightsViewController" automaticallyAdjustsScrollViewInsets="NO" id="c8a-yu-hKr" customClass="FlightsViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zL2-xc-5Sh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JHN-Gg-hfH">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="JHN-Gg-hfH">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.11764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,21 +30,22 @@
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="lr0-G4-eDG">
-                                <rect key="frame" x="177" y="401" width="20" height="20"/>
+                                <rect key="frame" x="177" y="423" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.12941176470588234" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JHN-Gg-hfH" firstAttribute="top" secondItem="aIG-un-BFZ" secondAttribute="top" id="3Id-2e-8d0"/>
-                            <constraint firstItem="aIG-un-BFZ" firstAttribute="bottom" secondItem="JHN-Gg-hfH" secondAttribute="bottom" id="6Ru-wT-OFT"/>
-                            <constraint firstItem="lr0-G4-eDG" firstAttribute="centerY" secondItem="JHN-Gg-hfH" secondAttribute="centerY" id="6iE-Qi-5eG"/>
-                            <constraint firstItem="aIG-un-BFZ" firstAttribute="trailing" secondItem="JHN-Gg-hfH" secondAttribute="trailing" id="Fj5-Jg-eep"/>
-                            <constraint firstItem="JHN-Gg-hfH" firstAttribute="leading" secondItem="aIG-un-BFZ" secondAttribute="leading" id="LuC-vY-k9a"/>
-                            <constraint firstItem="lr0-G4-eDG" firstAttribute="centerX" secondItem="JHN-Gg-hfH" secondAttribute="centerX" id="MsF-gr-RhC"/>
+                            <constraint firstItem="lr0-G4-eDG" firstAttribute="centerY" secondItem="JHN-Gg-hfH" secondAttribute="centerY" id="4MR-fR-kQO"/>
+                            <constraint firstItem="JHN-Gg-hfH" firstAttribute="top" secondItem="aIG-un-BFZ" secondAttribute="top" id="Sgt-Rt-Gjf"/>
+                            <constraint firstItem="JHN-Gg-hfH" firstAttribute="bottom" secondItem="aIG-un-BFZ" secondAttribute="bottom" id="WYZ-L4-2AS"/>
+                            <constraint firstItem="JHN-Gg-hfH" firstAttribute="leading" secondItem="aIG-un-BFZ" secondAttribute="leading" id="eUs-zZ-qI3"/>
+                            <constraint firstItem="JHN-Gg-hfH" firstAttribute="trailing" secondItem="aIG-un-BFZ" secondAttribute="trailing" id="jXl-0i-orW"/>
+                            <constraint firstItem="lr0-G4-eDG" firstAttribute="centerX" secondItem="JHN-Gg-hfH" secondAttribute="centerX" id="qZe-Cg-GDI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aIG-un-BFZ"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="flightsTableView" destination="JHN-Gg-hfH" id="YT0-fc-BmB"/>
                         <outlet property="loadingIndicator" destination="lr0-G4-eDG" id="gHo-zP-Bs5"/>

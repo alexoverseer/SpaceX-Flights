@@ -1,6 +1,6 @@
 import UIKit
 import Alamofire
-import AlamofireImage
+import SDWebImage
 import youtube_ios_player_helper
 
 final class FlightDetailsViewController: UIViewController, StoryboardInstantiable {
@@ -46,16 +46,13 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     func loadFlightImage() {
         let imageURL = flight?.links.videoLink.youtubePreviewImageURL()
         guard let url = imageURL else { return }
-
-        Alamofire.request(url).responseImage { [weak self] response in
-            
-            if let image = response.result.value {
-                self?.loadingIndicator.stopAnimating()
-                self?.flightImage.image = image
-                UIView.animate(withDuration: 0.2, animations: {
-                    self?.flightImage.alpha = 1
-                })
-            }
+        
+        flightImage.sd_setImage(with: URL(string: url)) { [weak self] (image, error, cacheType, url) in
+            self?.loadingIndicator.stopAnimating()
+            self?.flightImage.image = image
+            UIView.animate(withDuration: 0.2, animations: {
+                self?.flightImage.alpha = 1
+            })
         }
     }
     

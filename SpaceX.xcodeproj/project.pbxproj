@@ -17,8 +17,8 @@
 		BC4EF37C20C7EA0C00B225DC /* FlightsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37B20C7EA0C00B225DC /* FlightsViewController.storyboard */; };
 		BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */; };
 		BC4EF38020C7ED4600B225DC /* FlightDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */; };
-		BC4EF38320C7F0F200B225DC /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */; };
-		BC4EF38520C7F19A00B225DC /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */; };
+		BC4EF38320C7F0F200B225DC /* UINavigationController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38220C7F0F200B225DC /* UINavigationController+Theme.swift */; };
+		BC4EF38520C7F19A00B225DC /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38420C7F19A00B225DC /* UIColor+Theme.swift */; };
 		BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */; };
 		BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */; };
 		BC4EF38C20C7F8B600B225DC /* FlighTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */; };
@@ -32,8 +32,10 @@
 		BC868A6C20D7A07E00D9EBB2 /* Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6B20D7A07E00D9EBB2 /* Reuse.swift */; };
 		BC868A6E20D7A08F00D9EBB2 /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */; };
 		BC868A7020D7A0A000D9EBB2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6F20D7A0A000D9EBB2 /* Links.swift */; };
-		BC868A7220D7DC5600D9EBB2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7120D7DC5600D9EBB2 /* StringExtensions.swift */; };
+		BC868A7220D7DC5600D9EBB2 /* String+YoutubeLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7120D7DC5600D9EBB2 /* String+YoutubeLinks.swift */; };
 		BC868A7420D7EF1700D9EBB2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */; };
+		BCFB916D20D9077400AF0221 /* FlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB916C20D9077400AF0221 /* FlightsViewModel.swift */; };
+		BCFB916F20D9095D00AF0221 /* FlighTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB916E20D9095D00AF0221 /* FlighTableViewCellViewModel.swift */; };
 		ED20B24534DCC3202C425D06 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +53,8 @@
 		BC4EF37B20C7EA0C00B225DC /* FlightsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightsViewController.storyboard; sourceTree = "<group>"; };
 		BC4EF37D20C7ED3E00B225DC /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
 		BC4EF37F20C7ED4600B225DC /* FlightDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightDetailsViewController.storyboard; sourceTree = "<group>"; };
-		BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
-		BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		BC4EF38220C7F0F200B225DC /* UINavigationController+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Theme.swift"; sourceTree = "<group>"; };
+		BC4EF38420C7F19A00B225DC /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		BC4EF38620C7F1FA00B225DC /* ConvenienceFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceFunctions.swift; sourceTree = "<group>"; };
 		BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighTableViewCell.swift; sourceTree = "<group>"; };
 		BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlighTableViewCell.xib; sourceTree = "<group>"; };
@@ -66,8 +68,10 @@
 		BC868A6B20D7A07E00D9EBB2 /* Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuse.swift; sourceTree = "<group>"; };
 		BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
 		BC868A6F20D7A0A000D9EBB2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
-		BC868A7120D7DC5600D9EBB2 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		BC868A7120D7DC5600D9EBB2 /* String+YoutubeLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YoutubeLinks.swift"; sourceTree = "<group>"; };
 		BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		BCFB916C20D9077400AF0221 /* FlightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewModel.swift; sourceTree = "<group>"; };
+		BCFB916E20D9095D00AF0221 /* FlighTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		CD547FDEC908FFA79CA5A791 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4EF38820C7F89400B225DC /* Cells */,
+				BCFB916C20D9077400AF0221 /* FlightsViewModel.swift */,
 				BC4EF37920C7E9CB00B225DC /* FlightsViewController.swift */,
 				BC4EF37B20C7EA0C00B225DC /* FlightsViewController.storyboard */,
 			);
@@ -177,9 +182,9 @@
 		BC4EF38120C7F0B100B225DC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BC4EF38220C7F0F200B225DC /* UINavigationControllerExtensions.swift */,
-				BC4EF38420C7F19A00B225DC /* UIColorExtensions.swift */,
-				BC868A7120D7DC5600D9EBB2 /* StringExtensions.swift */,
+				BC4EF38420C7F19A00B225DC /* UIColor+Theme.swift */,
+				BC4EF38220C7F0F200B225DC /* UINavigationController+Theme.swift */,
+				BC868A7120D7DC5600D9EBB2 /* String+YoutubeLinks.swift */,
 				BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
@@ -188,6 +193,7 @@
 		BC4EF38820C7F89400B225DC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BCFB916E20D9095D00AF0221 /* FlighTableViewCellViewModel.swift */,
 				BC4EF38920C7F8B600B225DC /* FlighTableViewCell.swift */,
 				BC4EF38A20C7F8B600B225DC /* FlighTableViewCell.xib */,
 			);
@@ -238,7 +244,6 @@
 				BC4EF35620C7E32100B225DC /* Frameworks */,
 				BC4EF35720C7E32100B225DC /* Resources */,
 				89EA6BDF7565AA44843F9A24 /* [CP] Embed Pods Frameworks */,
-				B41830CBC9ECE58CFA7EC6F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,33 +311,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B41830CBC9ECE58CFA7EC6F2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F06EDF18BD2CE46065F1EE2A /* [CP] Check Pods Manifest.lock */ = {
@@ -360,12 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4EF38520C7F19A00B225DC /* UIColorExtensions.swift in Sources */,
+				BC4EF38520C7F19A00B225DC /* UIColor+Theme.swift in Sources */,
 				BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */,
 				BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */,
-				BC868A7220D7DC5600D9EBB2 /* StringExtensions.swift in Sources */,
+				BC868A7220D7DC5600D9EBB2 /* String+YoutubeLinks.swift in Sources */,
 				BC868A6620D7A05700D9EBB2 /* Flight.swift in Sources */,
-				BC4EF38320C7F0F200B225DC /* UINavigationControllerExtensions.swift in Sources */,
+				BC4EF38320C7F0F200B225DC /* UINavigationController+Theme.swift in Sources */,
+				BCFB916D20D9077400AF0221 /* FlightsViewModel.swift in Sources */,
 				BC868A5D20D79EB300D9EBB2 /* Request.swift in Sources */,
 				BC868A6120D79FB300D9EBB2 /* Utils.swift in Sources */,
 				BC868A6320D79FCF00D9EBB2 /* SpaceFlights.swift in Sources */,
@@ -374,6 +365,7 @@
 				BC868A6C20D7A07E00D9EBB2 /* Reuse.swift in Sources */,
 				BC868A7420D7EF1700D9EBB2 /* UIViewControllerExtensions.swift in Sources */,
 				BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */,
+				BCFB916F20D9095D00AF0221 /* FlighTableViewCellViewModel.swift in Sources */,
 				BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */,
 				BC4EF37A20C7E9CB00B225DC /* FlightsViewController.swift in Sources */,
 				BC868A6A20D7A07100D9EBB2 /* Telemetry.swift in Sources */,
@@ -519,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XY9H4LH9U8;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XY9H4LH9U8;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

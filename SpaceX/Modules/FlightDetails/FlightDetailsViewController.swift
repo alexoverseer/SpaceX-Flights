@@ -4,7 +4,7 @@ import Kingfisher
 import youtube_ios_player_helper
 
 final class FlightDetailsViewController: UIViewController, StoryboardInstantiable {
-    
+  
     static var storyboardName: String = "FlightDetailsViewController"
     
     @IBOutlet weak var flightImage: UIImageView!
@@ -19,7 +19,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         title = flight?.missionName
         setMainInfo()
         loadFlightImage()

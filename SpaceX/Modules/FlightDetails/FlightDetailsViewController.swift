@@ -1,10 +1,10 @@
 import UIKit
 import Alamofire
-import SDWebImage
+import Kingfisher
 import youtube_ios_player_helper
 
 final class FlightDetailsViewController: UIViewController, StoryboardInstantiable {
-
+    
     static var storyboardName: String = "FlightDetailsViewController"
     
     @IBOutlet weak var flightImage: UIImageView!
@@ -19,7 +19,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = flight?.missionName
         setMainInfo()
         loadFlightImage()
@@ -47,13 +47,14 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
         let imageURL = flight?.links.videoLink.youtubePreviewImageURL()
         guard let url = imageURL else { return }
         
-        flightImage.sd_setImage(with: URL(string: url)) { [weak self] (image, error, cacheType, url) in
-            self?.loadingIndicator.stopAnimating()
-            self?.flightImage.image = image
-            UIView.animate(withDuration: 0.2, animations: {
-                self?.flightImage.alpha = 1
-            })
-        }
+        flightImage?.kf.setImage(with: URL(string: url),
+                                 placeholder: nil,
+                                 options: [.transition(ImageTransition.fade(0.5))],
+                                 progressBlock: nil,
+                                 completionHandler: { [weak self] (image, error, cacheType, imageURL) in
+                                    self?.flightImage.image = image
+                                    self?.loadingIndicator.stopAnimating()
+        })
     }
     
     @IBAction func swhowFlightDetailsOnWikipedia() {

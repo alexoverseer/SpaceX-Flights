@@ -6,7 +6,7 @@ target 'SpaceX' do
 
   pod 'Alamofire'
   pod 'youtube-ios-player-helper'
-  pod 'SDWebImage'
+  pod 'Kingfisher'
   pod 'Reusable'
 
 end

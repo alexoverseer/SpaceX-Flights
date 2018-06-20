@@ -1,6 +1,6 @@
 import UIKit
 import Alamofire
-import SDWebImage
+import Kingfisher
 import Reusable
 
 class FlighTableViewCell: UITableViewCell, NibReusable {
@@ -17,11 +17,12 @@ class FlighTableViewCell: UITableViewCell, NibReusable {
     
     private func loadThumbnailImage(imageURL: String) {
         
-        flightImage?.sd_setImage(with: URL(string: imageURL)) { [weak self] (image, error, cacheType, url) in
-            self?.flightImage.image = image
-            UIView.animate(withDuration: 0.2, animations: {
-                self?.flightImage.alpha = 1
-            })
-        };
+        flightImage?.kf.setImage(with: URL(string: imageURL),
+                                 placeholder: nil,
+                                 options: [.transition(ImageTransition.fade(0.5))],
+                                 progressBlock: nil,
+                                 completionHandler: { [weak self] (image, error, cacheType, imageURL) in
+                                    self?.flightImage.image = image
+        })
     }
 }

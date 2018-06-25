@@ -8,7 +8,7 @@ enum ErrorType: Error {
     
     var message: String {
         switch self {
-        case .undefined, .request(_), .responseParse: return "Something went wrong"
+        case .undefined, .request, .responseParse: return "Something went wrong"
         case .connection: return "Seems you don't have internet connection"
         }
     }

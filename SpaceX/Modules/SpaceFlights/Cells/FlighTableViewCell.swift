@@ -1,7 +1,7 @@
-import UIKit
 import Alamofire
 import Kingfisher
 import Reusable
+import UIKit
 
 class FlighTableViewCell: UITableViewCell, NibReusable {
     
@@ -21,7 +21,7 @@ class FlighTableViewCell: UITableViewCell, NibReusable {
                                  placeholder: nil,
                                  options: [.transition(ImageTransition.fade(0.5))],
                                  progressBlock: nil,
-                                 completionHandler: { [weak self] (image, error, cacheType, imageURL) in
+                                 completionHandler: { [weak self] (image, _, _, _) in
                                     self?.flightImage.image = image
         })
     }

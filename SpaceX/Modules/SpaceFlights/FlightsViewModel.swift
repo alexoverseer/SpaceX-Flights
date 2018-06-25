@@ -6,9 +6,9 @@ final class FlightsViewModel {
     
     private var flights: [Flight] = [Flight]()
     
-    var reloadFlightsTableView: (()->())?
-    var showAlertClosure: (()->())?
-    var updateLoadingStatus: (()->())?
+    var reloadFlightsTableView: (() -> Void)?
+    var showAlertClosure: (() -> Void)?
+    var updateLoadingStatus: (() -> Void)?
     
     private var cellViewModels: [FlighTableViewCellViewModel] = [FlighTableViewCellViewModel]() {
         didSet {
@@ -66,7 +66,7 @@ final class FlightsViewModel {
     func createCellViewModel(flight: Flight) -> FlighTableViewCellViewModel {
         
         return FlighTableViewCellViewModel(missionNameText: flight.missionName,
-                                            launchDateText: formatedFlightDate(flightDate: flight.launchDateUnix).uppercased(),
-                                            flightImageUrl: flight.links.videoLink.youtubePreviewImageURL())
+                                           launchDateText: formatedFlightDate(flightDate: flight.launchDateUnix).uppercased(),
+                                           flightImageUrl: flight.links.videoLink.youtubePreviewImageURL())
     }
 }

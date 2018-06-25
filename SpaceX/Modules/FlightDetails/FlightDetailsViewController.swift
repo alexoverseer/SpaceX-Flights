@@ -1,6 +1,6 @@
-import UIKit
 import Alamofire
 import Kingfisher
+import UIKit
 import youtube_ios_player_helper
 
 final class FlightDetailsViewController: UIViewController, StoryboardInstantiable {
@@ -51,7 +51,7 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
                                  placeholder: nil,
                                  options: [.transition(ImageTransition.fade(0.5))],
                                  progressBlock: nil,
-                                 completionHandler: { [weak self] (image, error, cacheType, imageURL) in
+                                 completionHandler: { [weak self] (image, _, _, _) in
                                     self?.flightImage.image = image
                                     self?.loadingIndicator.stopAnimating()
         })

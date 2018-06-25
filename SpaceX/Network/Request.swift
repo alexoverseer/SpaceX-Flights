@@ -1,5 +1,5 @@
-import Foundation
 import Alamofire
+import Foundation
 
 private let baseAPI = "https://api.spacexdata.com/v2/"
 

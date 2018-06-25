@@ -5,7 +5,7 @@ infix operator !!
  - Parameter failureText: Descriptive error message when unwrapping fails.
  */
 func !! <T>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
-    if let x = wrapped { return x }
+    if let xValue = wrapped { return xValue }
     fatalError("\(failureText()), Function: \(#function), Line: \(#line), Column: \(#column)")
 }
 
@@ -14,6 +14,6 @@ func !! <T>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
  - Parameter failureText: Descriptive error message when unwrapping fails.
  */
 func !! <T>(wrapped: Any?, failureText: @autoclosure () -> String) -> T {
-    if let x = wrapped as? T { return x }
+    if let xValue = wrapped as? T { return xValue }
     fatalError("\(failureText()), Function: \(#function), Line: \(#line), Column: \(#column)")
 }

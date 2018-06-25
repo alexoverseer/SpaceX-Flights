@@ -11,6 +11,10 @@ final class FlightsViewController: UIViewController, StoryboardInstantiable {
         return FlightsViewModel()
     }()
     
+    lazy fileprivate var flightNavigator: SpaceFlightsNavigator = {
+        return SpaceFlightsNavigator(navigationController: navigationController)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -85,9 +89,7 @@ extension FlightsViewController: UITableViewDataSource {
 extension FlightsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let flightDetailsController = FlightDetailsViewController.instantiate()
-        flightDetailsController.setupFlight(flightsViewModel.getFlightDetails(at: indexPath))
-        navigationController?.pushViewController(flightDetailsController, animated: true)
+        let flightDetails = flightsViewModel.getFlightDetails(at: indexPath)
+        flightNavigator.navigate(to: .flightDetails(details: flightDetails))
     }
 }

@@ -41,10 +41,10 @@ final class FlightsViewModel {
         spaceFlightsAPI.requestFlights(onSuccess: { [weak self] flights in
             self?.isLoading = false
             self?.processFetchedFlights(flights: flights)
-        }) { [weak self] error in
+        }, onFailure: { [weak self] error in
             self?.isLoading = false
             self?.alertMessage = error.message
-        }
+        })
     }
     
     func getCellViewModel(at indexPath: IndexPath) -> FlighTableViewCellViewModel {

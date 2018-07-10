@@ -1,4 +1,4 @@
-# SpaceX App (MVVM)
+# SpaceX App (MVVM Architecture)
 
 * App contains 2 screens (Main Screen and Launch Details Screen)
 * Main Screen: Show all past launches of SpaceX

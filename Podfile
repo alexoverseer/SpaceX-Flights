@@ -8,5 +8,6 @@ target 'SpaceX' do
   pod 'youtube-ios-player-helper'
   pod 'Kingfisher'
   pod 'Reusable'
-
+  pod 'SwiftLint'
+  
 end

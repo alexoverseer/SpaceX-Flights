@@ -250,7 +250,7 @@
 				BC4EF35620C7E32100B225DC /* Frameworks */,
 				BC4EF35720C7E32100B225DC /* Resources */,
 				89EA6BDF7565AA44843F9A24 /* [CP] Embed Pods Frameworks */,
-				BC31488320E11B52009777CF /* ShellScript */,
+				BC31488320E11B52009777CF /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -273,6 +273,7 @@
 				TargetAttributes = {
 					BC4EF35820C7E32100B225DC = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -316,7 +317,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
@@ -331,21 +332,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC31488320E11B52009777CF /* ShellScript */ = {
+		BC31488320E11B52009777CF /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		F06EDF18BD2CE46065F1EE2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -544,7 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -564,7 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

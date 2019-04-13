@@ -38,13 +38,16 @@ final class FlightsViewModel {
     
     func initFetch() {
         self.isLoading = true
-        spaceFlightsAPI.requestFlights(onSuccess: { [weak self] flights in
+        spaceFlightsAPI.fetchFlights { [weak self] result in
             self?.isLoading = false
-            self?.processFetchedFlights(flights: flights)
-        }, onFailure: { [weak self] error in
-            self?.isLoading = false
-            self?.alertMessage = error.message
-        })
+            
+            switch result {
+            case .success(let flights):
+                self?.processFetchedFlights(flights: flights)
+            case .failure(let error):
+                self?.alertMessage = error.message
+            }
+        }
     }
     
     func getCellViewModel(at indexPath: IndexPath) -> FlighTableViewCellViewModel {
@@ -56,7 +59,6 @@ final class FlightsViewModel {
     }
     
     private func processFetchedFlights(flights: [Flight]) {
-        
         self.flights = flights
         var flighViewModels = [FlighTableViewCellViewModel]()
         flighViewModels = flights.map {createCellViewModel(flight: $0)}
@@ -64,9 +66,8 @@ final class FlightsViewModel {
     }
     
     func createCellViewModel(flight: Flight) -> FlighTableViewCellViewModel {
-        
         return FlighTableViewCellViewModel(missionNameText: flight.missionName,
-                                           launchDateText: formatedFlightDate(flightDate: flight.launchDateUnix).uppercased(),
-                                           flightImageUrl: flight.links.videoLink.youtubePreviewImageURL())
+                                           launchDateText: formatedFlightDate(flightDate: Double(flight.launchDateUnix)).uppercased(),
+                                           flightImageUrl: flight.links.youtubeID.youtubePreviewImageURL())
     }
 }

@@ -27,17 +27,14 @@
 		BC868A6120D79FB300D9EBB2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6020D79FB300D9EBB2 /* Utils.swift */; };
 		BC868A6320D79FCF00D9EBB2 /* SpaceFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6220D79FCF00D9EBB2 /* SpaceFlights.swift */; };
 		BC868A6620D7A05700D9EBB2 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6520D7A05700D9EBB2 /* Flight.swift */; };
-		BC868A6820D7A06400D9EBB2 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6720D7A06400D9EBB2 /* Rocket.swift */; };
-		BC868A6A20D7A07100D9EBB2 /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6920D7A07100D9EBB2 /* Telemetry.swift */; };
-		BC868A6C20D7A07E00D9EBB2 /* Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6B20D7A07E00D9EBB2 /* Reuse.swift */; };
-		BC868A6E20D7A08F00D9EBB2 /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */; };
-		BC868A7020D7A0A000D9EBB2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A6F20D7A0A000D9EBB2 /* Links.swift */; };
 		BC868A7220D7DC5600D9EBB2 /* String+YoutubeLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7120D7DC5600D9EBB2 /* String+YoutubeLinks.swift */; };
 		BC868A7420D7EF1700D9EBB2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */; };
 		BCE0BEB820E0D4F600F397E2 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0BEB720E0D4F600F397E2 /* Navigator.swift */; };
 		BCE0BEBA20E0D59500F397E2 /* SpaceFlightsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0BEB920E0D59500F397E2 /* SpaceFlightsNavigator.swift */; };
 		BCFB916D20D9077400AF0221 /* FlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB916C20D9077400AF0221 /* FlightsViewModel.swift */; };
 		BCFB916F20D9095D00AF0221 /* FlighTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB916E20D9095D00AF0221 /* FlighTableViewCellViewModel.swift */; };
+		BCFF4E0F2262A153000D7950 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF4E0E2262A153000D7950 /* Links.swift */; };
+		BCFF4E112262A168000D7950 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF4E102262A168000D7950 /* Rocket.swift */; };
 		ED20B24534DCC3202C425D06 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,17 +62,14 @@
 		BC868A6020D79FB300D9EBB2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BC868A6220D79FCF00D9EBB2 /* SpaceFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceFlights.swift; sourceTree = "<group>"; };
 		BC868A6520D7A05700D9EBB2 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
-		BC868A6720D7A06400D9EBB2 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
-		BC868A6920D7A07100D9EBB2 /* Telemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telemetry.swift; sourceTree = "<group>"; };
-		BC868A6B20D7A07E00D9EBB2 /* Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuse.swift; sourceTree = "<group>"; };
-		BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
-		BC868A6F20D7A0A000D9EBB2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		BC868A7120D7DC5600D9EBB2 /* String+YoutubeLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YoutubeLinks.swift"; sourceTree = "<group>"; };
 		BC868A7320D7EF1700D9EBB2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		BCE0BEB720E0D4F600F397E2 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		BCE0BEB920E0D59500F397E2 /* SpaceFlightsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceFlightsNavigator.swift; sourceTree = "<group>"; };
 		BCFB916C20D9077400AF0221 /* FlightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewModel.swift; sourceTree = "<group>"; };
 		BCFB916E20D9095D00AF0221 /* FlighTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		BCFF4E0E2262A153000D7950 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		BCFF4E102262A168000D7950 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		CD547FDEC908FFA79CA5A791 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		E93EC15561E19CFD845E9FC9 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,11 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				BC868A6520D7A05700D9EBB2 /* Flight.swift */,
-				BC868A6720D7A06400D9EBB2 /* Rocket.swift */,
-				BC868A6920D7A07100D9EBB2 /* Telemetry.swift */,
-				BC868A6B20D7A07E00D9EBB2 /* Reuse.swift */,
-				BC868A6D20D7A08F00D9EBB2 /* LaunchSite.swift */,
-				BC868A6F20D7A0A000D9EBB2 /* Links.swift */,
+				BCFF4E0E2262A153000D7950 /* Links.swift */,
+				BCFF4E102262A168000D7950 /* Rocket.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,7 +264,7 @@
 				TargetAttributes = {
 					BC4EF35820C7E32100B225DC = {
 						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -376,6 +367,7 @@
 			files = (
 				BC4EF38520C7F19A00B225DC /* UIColor+Theme.swift in Sources */,
 				BC4EF37E20C7ED3E00B225DC /* FlightDetailsViewController.swift in Sources */,
+				BCFF4E112262A168000D7950 /* Rocket.swift in Sources */,
 				BC4EF35D20C7E32100B225DC /* AppDelegate.swift in Sources */,
 				BC868A7220D7DC5600D9EBB2 /* String+YoutubeLinks.swift in Sources */,
 				BC868A6620D7A05700D9EBB2 /* Flight.swift in Sources */,
@@ -387,19 +379,15 @@
 				BC868A6320D79FCF00D9EBB2 /* SpaceFlights.swift in Sources */,
 				BC4EF37520C7E7B500B225DC /* StoryboardInstantiable.swift in Sources */,
 				BC4EF37220C7E79A00B225DC /* Alert.swift in Sources */,
-				BC868A6C20D7A07E00D9EBB2 /* Reuse.swift in Sources */,
 				BC868A7420D7EF1700D9EBB2 /* UIViewControllerExtensions.swift in Sources */,
 				BC4EF38B20C7F8B600B225DC /* FlighTableViewCell.swift in Sources */,
 				BCE0BEBA20E0D59500F397E2 /* SpaceFlightsNavigator.swift in Sources */,
 				BCFB916F20D9095D00AF0221 /* FlighTableViewCellViewModel.swift in Sources */,
+				BCFF4E0F2262A153000D7950 /* Links.swift in Sources */,
 				BC4EF38720C7F1FB00B225DC /* ConvenienceFunctions.swift in Sources */,
 				BC4EF37A20C7E9CB00B225DC /* FlightsViewController.swift in Sources */,
-				BC868A6A20D7A07100D9EBB2 /* Telemetry.swift in Sources */,
-				BC868A7020D7A0A000D9EBB2 /* Links.swift in Sources */,
 				BC868A5F20D79F8800D9EBB2 /* ErrorType.swift in Sources */,
 				BC4EF37120C7E79A00B225DC /* Operators.swift in Sources */,
-				BC868A6E20D7A08F00D9EBB2 /* LaunchSite.swift in Sources */,
-				BC868A6820D7A06400D9EBB2 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -566,7 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

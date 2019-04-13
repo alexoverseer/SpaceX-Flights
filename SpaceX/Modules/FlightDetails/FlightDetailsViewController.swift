@@ -37,14 +37,13 @@ final class FlightDetailsViewController: UIViewController, StoryboardInstantiabl
     }
     
     private func loadVideo() {
-        
-        guard let ytVideoID = flight?.links.videoLink.getYTVideoID() else { return }
+        guard let ytVideoID = flight?.links.youtubeID else { return }
         ytPlayerView.delegate = self
         ytPlayerView.load(withVideoId: ytVideoID)
     }
     
     func loadFlightImage() {
-        let imageURL = flight?.links.videoLink.youtubePreviewImageURL()
+        let imageURL = flight?.links.youtubeID.youtubePreviewImageURL()
         guard let url = imageURL else { return }
         
         flightImage?.kf.setImage(with: URL(string: url),
